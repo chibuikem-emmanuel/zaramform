@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaramTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="images/ZARAMLOGO.PNG">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "BmMyFu6Es9RqQ6j3k",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/ZARAMLOGO.PNG" alt="Logo"></a>
+    </div>
+    <ul class="nav-links">
+    <li><a href="index.html">Apply Here for Your Free Tutorials</a></li>
+    </ul>
+    <div class="donate-btn">
+        <a href="index.html" class="btn">Apply Here</a>
+    </div>
+   
+    <!-- Hamburger menu for mobile -->
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+    <section class="section-1">
+        <h1 class="centered-text">ZaramTech is trusted for your tech journey</h1>
+        <div class="sub-text">
+            <h6>Please send your prove of the payment(OPAY 7043151639) of your application fee to this <bold>WHATSAPP NUMBER 09079529162</bold></h6>
+        </div>
+
+    </section>
+
+
+
+
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <!-- Left Image Card -->
+    <div class="image-card">
+        <img src="images/Zaram2.PNG" alt="Contact Us">
+    </div>
+
+    <!-- Right Form Card -->
+    <div class="form-card" id="contact-form">
+        <h1>Apply with this form</h1>
+        <h6>Please fill your details and also a message saying you applied and you paid the application fee</h6>
+
+        <!-- Name Field -->
+        <label class="label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+        <!-- Message Field -->
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required placeholder="Your Message"></textarea>
+
+
+        <!-- Submit Button -->
+        <button class="btn-submit" type="button" value="Send"  onclick="sendEmail()" style="width: 200px; background-color: #e45300;">Send</button>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <!-- Newsletter Section -->
+    <div class="newsletter-container">
+        <h5 class="newsletter-title">Join our classes</h5>
+        <div class="newsletter-input-container">
+            <input type="email" placeholder="Just fill the form above" class="email-input">
+           <button class="newsletter-btn"> <a href="index.html" style="text-decoration: none; color: white;">Email Us</a></button>
+        </div>
+        <h6 class="newsletter-text">By applying you agree with the terms and conditions </h6>
+    </div>
+
+   
+</footer>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
